@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&family=Oleo+Script+Swash+Caps&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 100%;
+    
+background-size: 100%;
+margin-left: 60px;
+
+}
+
+nav{
+    margin-right: 65px;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0, 126, 158);
+    height: 8vh;
+
+
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+ 
+li{
+    background-color: rgb(0, 126, 158);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s; 
+    
+}
+
+li a{
+    color:#ccc;
+    text-decoration: none;
+}
+
+li ul{
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+li ul li{
+    clear: both;
+    width: 100%;
+}
+
+ul li:hover,
+ul li:focus-within{
+    background-color: rgb(210, 201, 122);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a:hover{
+    color:rgb(255, 255, 255);
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+footer{
+position:relative;
+bottom: 0;
+background-color: rgb(0, 126, 158);
+color: #FFF;
+width: 100%;
+height: 70px;    
+text-align: center;
+line-height: 70px;
+}
+
+div{
+    display: inline-block;
+}
+
+
+.container{
+    background:linear-gradient(60deg,rgb(255, 255, 255)0%,rgb(28, 244, 255)35%,rgb(255, 255, 255)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container2{
+    background:linear-gradient(60deg,rgb(0, 115, 40)0%,rgb(255, 255, 255)35%,rgb(196, 0, 0)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container3{
+    background:linear-gradient(60deg,rgb(0, 115, 40)0%,rgb(255, 255, 255)35%,rgb(196, 0, 0)100%);    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container4{
+    background:linear-gradient(60deg,rgb(255, 255, 255)0%,rgb(28, 244, 255)35%,rgb(255, 255, 255)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container5{
+    background:linear-gradient(60deg,rgb(0, 0, 0)0%,rgba(199, 0, 0, 0.719)35%,rgb(200, 190, 0)100%);    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container6{
+    background:linear-gradient(60deg,rgb(8, 122, 0)0%,rgba(251, 255, 20, 0.967)35%,rgb(0, 30, 183)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container7{
+    background:linear-gradient(60deg,rgb(8, 122, 0)0%,rgba(251, 255, 20, 0.967)35%,rgb(0, 30, 183)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container8{
+    background:linear-gradient(60deg,rgb(255, 255, 255)0%,rgba(255, 0, 0, 0.967)35%,rgb(255, 255, 255)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container9{
+    background:linear-gradient(60deg,rgb(8, 122, 0)0%,rgba(251, 255, 20, 0.967)35%,rgb(0, 30, 183)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container10{
+    background:linear-gradient(60deg,rgb(0, 0, 0)0%,rgba(199, 0, 0, 0.719)35%,rgb(200, 190, 0)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container11{
+    background:linear-gradient(60deg,rgb(255, 255, 255)0%,rgb(28, 244, 255)35%,rgb(255, 255, 255)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container12{
+    background:linear-gradient(60deg,rgb(0, 115, 40)0%,rgb(255, 255, 255)35%,rgb(196, 0, 0)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container13{
+    background:linear-gradient(60deg,rgb(255, 255, 255)0%,rgb(28, 244, 255)35%,rgb(255, 255, 255)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container14{
+    background:linear-gradient(60deg,rgb(0, 0, 0)0%,rgba(199, 0, 0, 0.719)35%,rgb(200, 190, 0)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container15{
+    background:linear-gradient(60deg,rgb(8, 122, 0)0%,rgba(251, 255, 20, 0.967)35%,rgb(0, 30, 183)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container16{
+    background:linear-gradient(60deg,rgb(0, 22, 122)0%,rgba(255, 255, 255, 0.967)35%,rgb(255, 0, 0)100%);    
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container17{
+    background:linear-gradient(60deg,rgb(8, 122, 0)0%,rgba(251, 255, 20, 0.967)35%,rgb(0, 30, 183)100%);    color: #fff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container18{
+    background:linear-gradient(60deg,rgb(0, 115, 40)0%,rgb(255, 255, 255)35%,rgb(196, 0, 0)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container19{
+    background:linear-gradient(60deg,rgb(175, 0, 0)0%,rgb(214, 161, 0)35%,rgb(175, 0, 0)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container20{
+    background:linear-gradient(60deg,rgb(175, 0, 0)0%,rgb(214, 161, 0)35%,rgb(175, 0, 0)100%);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+.container21{
+    background:linear-gradient(60deg,rgb(0, 22, 122)0%,rgba(255, 255, 255, 0.967)35%,rgb(255, 0, 0)100%);    
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: none;
+  
+}
+
+.ano{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    background-color:rgb(192, 255, 248);
+    border: none;
+    padding: 80px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
+    
+}
+
+button:hover{
+    background-color: rgb(46, 255, 116);
+}
+

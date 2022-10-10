@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0, 126, 158);
+    height: 8vh;
+    flex-direction: column;
+    top: 0%;
+
+
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+
+}
+ 
+li{
+    background-color: rgb(0, 126, 158);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s; 
+    
+}
+
+li a{
+    color:#ccc;
+    text-decoration: dashed;
+}
+
+li ul{
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: fixed;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: flex;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+li ul li{
+    clear: both;
+    width: 100%;
+}
+
+ul li:hover,
+ul li:focus-within{
+    background-color: rgb(252, 233, 69);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a:hover{
+    color:rgb(81, 247, 30);
+}
+
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+
+body {
+    background-image:url(taçaa.jpg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color) ;
+}
+
+.container {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.title {
+    
+    font-size: 40px;
+    text-align: center;
+    color: rgb(248, 177, 107);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+.inputbox {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 40px;
+}
+
+.inputbox label {
+    position: relative;
+    top:0;
+    left: 10px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    transition: .5s;
+    cursor: text;
+}
+
+.inputbox input {
+    position: absolute;
+    background-color:#ffe250;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    transition: .5s;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.inputbox input:focus,
+.inputbox input:valid {
+    height: 100%;
+}
+
+.inputbox input:focus + label,
+.inputbox input:valid + label {
+    top: -40px;
+    left: 0;
+}
+
+.container button {
+    justify-self: center;
+    width: 200px;
+    height: 50px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(0, 126, 158);
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+    }
+    
+    .coluna{
+        float: left;
+        width: 33.33%;
+    
+    }
+    
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
+
